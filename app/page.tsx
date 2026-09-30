@@ -420,6 +420,170 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Testimonials Section */}
+      <div className="relative w-full bg-[#FAFAFA] py-28 flex flex-col items-center overflow-hidden z-10 min-h-[784px] justify-center border-t border-gray-100">
+        {/* Background Gradients */}
+        <div className="absolute inset-0 max-w-[1440px] w-full mx-auto pointer-events-none z-0">
+          {/* Ellipse 11 (Top Right Green) */}
+          <div
+            className="absolute rounded-full opacity-70"
+            style={{
+              width: '1137px',
+              height: '1137px',
+              top: '-241px',
+              left: '842px',
+              background: 'radial-gradient(50% 50% at 50% 50%, #CBFC01 0%, rgba(203, 252, 1, 0.23) 45%, rgba(203, 252, 1, 0.06) 75%, rgba(203, 252, 1, 0) 100%)'
+            }}
+          ></div>
+          
+          {/* Ellipse 12 (Middle Green) */}
+          <div
+            className="absolute rounded-full opacity-70"
+            style={{
+              width: '672px',
+              height: '672px',
+              top: '-138px',
+              left: '395px',
+              background: 'radial-gradient(50% 50% at 50% 50%, #CBFC01 0%, rgba(203, 252, 1, 0.23) 45%, rgba(203, 252, 1, 0.06) 75%, rgba(203, 252, 1, 0) 100%)'
+            }}
+          ></div>
+
+          {/* Ellipse 8 (Left Blue) */}
+          <div
+            className="absolute rounded-full opacity-70"
+            style={{
+              width: '1137px',
+              height: '1137px',
+              top: '149px',
+              left: '-442px',
+              background: 'radial-gradient(50% 50% at 50% 50%, #003BE2 0%, rgba(0, 59, 226, 0.23) 45%, rgba(0, 59, 226, 0.06) 75%, rgba(0, 59, 226, 0) 100%)'
+            }}
+          ></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-[1250px] w-full px-6 flex flex-col gap-14 mt-4">
+          
+          {/* Header Row */}
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 w-full">
+            <h2 className="font-poppins font-semibold text-[44px] text-[#1D2125] leading-[1.2] tracking-[-0.01em] max-w-[577px]">
+              Discover What Our Community Is Saying
+            </h2>
+            <p className="font-sans font-normal text-[18px] text-[#5C6574] leading-[1.6] max-w-[580px]">
+              At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
+            </p>
+          </div>
+
+          {/* Testimonial Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-4">
+            {/* Card 1 */}
+            <div className="bg-white rounded-[24px] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] flex flex-col items-start h-full hover:-translate-y-1 transition-transform duration-300 border border-gray-100 cursor-pointer">
+              <img src="/images/Sarah M..png" alt="Sarah M." className="w-16 h-16 rounded-full object-cover mb-5 border-[3px] border-white shadow-sm" />
+              <h4 className="font-bold text-[#1D2125] text-[18px]">Sarah M.</h4>
+              <span className="text-[#003BE2] text-[14.5px] font-medium mb-5">Enthusiastic Learner</span>
+              <p className="font-sans font-normal text-[#5C6574] text-[18px] leading-[1.6]">
+                "ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white rounded-[24px] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] flex flex-col items-start h-full hover:-translate-y-1 transition-transform duration-300 border border-gray-100 cursor-pointer">
+              <img src="/images/James L..png" alt="James L." className="w-16 h-16 rounded-full object-cover mb-5 border-[3px] border-white shadow-sm" />
+              <h4 className="font-bold text-[#1D2125] text-[18px]">James L.</h4>
+              <span className="text-[#003BE2] text-[14.5px] font-medium mb-5">Lifelong Learner</span>
+              <p className="font-sans font-normal text-[#5C6574] text-[18px] leading-[1.6]">
+                "I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white rounded-[24px] p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] flex flex-col items-start h-full hover:-translate-y-1 transition-transform duration-300 border border-gray-100 cursor-pointer">
+              <img src="/images/Alex B..png" alt="Alex B." className="w-16 h-16 rounded-full object-cover mb-5 border-[3px] border-white shadow-sm" />
+              <h4 className="font-bold text-[#1D2125] text-[18px]">Alex B.</h4>
+              <span className="text-[#003BE2] text-[14.5px] font-medium mb-5">Inspired Creator</span>
+              <p className="font-sans font-normal text-[#5C6574] text-[18px] leading-[1.6]">
+                "As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <footer className="w-full bg-white pt-24 pb-8 flex flex-col items-center border-t border-gray-100 relative z-20">
+        <div className="max-w-[1250px] w-full px-6 flex flex-col gap-16">
+          
+          {/* Top Row */}
+          <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr_1fr_1fr] gap-12 lg:gap-8">
+            
+            {/* Column 1 - Brand & Newsletter */}
+            <div className="flex flex-col gap-6 pr-0 lg:pr-8">
+              <img src="/images/footer_bytespace.png" alt="ByteSpace Logo" className="h-[28px] w-auto object-contain self-start" />
+              <p className="text-[#5C6574] text-[15px] leading-[1.6]">
+                Stay Up to date with our latest features and releases by joining our newsletter.
+              </p>
+              
+              <div className="flex flex-row items-center gap-3 mt-2">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="flex-1 border border-gray-200 rounded-[50px] py-[12px] px-6 text-[#1D2125] text-[15px] outline-none focus:border-[#CED0D3] transition-colors bg-transparent"
+                />
+                <button className="bg-[#CBFC01] hover:bg-[#b5e000] text-[#1D2125] font-semibold text-[15px] py-[12px] px-8 rounded-[50px] transition-colors">
+                  Search
+                </button>
+              </div>
+              
+              <p className="text-[#5C6574] text-[13px] leading-[1.6]">
+                By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+              </p>
+            </div>
+
+            {/* Column 2 - Links 1 */}
+            <div className="flex flex-col gap-4 pt-1">
+              <a href="#" className="font-semibold text-[#1D2125] text-[15px] mb-2">Featured Courses</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Featured Categories</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Business</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">IT</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Design</a>
+            </div>
+
+            {/* Column 3 - Links 2 */}
+            <div className="flex flex-col gap-4 pt-1">
+              <a href="#" className="font-semibold text-[#1D2125] text-[15px] mb-2">Development</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Marketing</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Photography</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Finance</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Sport</a>
+            </div>
+
+            {/* Column 4 - Links 3 */}
+            <div className="flex flex-col gap-4 pt-1">
+              <a href="#" className="font-semibold text-[#1D2125] text-[15px] mb-2">Become a Creator</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Affiliate Program</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Contact</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">Help</a>
+              <a href="#" className="text-[#5C6574] text-[15px] hover:text-[#003BE2] transition-colors">About</a>
+            </div>
+
+          </div>
+
+          {/* Bottom Row */}
+          <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200 gap-4">
+            <p className="text-[#5C6574] text-[14px]">
+              © 2023 ByteSpace. All rights reserved.
+            </p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="text-[#5C6574] text-[14px] hover:text-[#003BE2] transition-colors">Privacy Policy</a>
+              <a href="#" className="text-[#5C6574] text-[14px] hover:text-[#003BE2] transition-colors">Terms of Service</a>
+              <a href="#" className="text-[#5C6574] text-[14px] hover:text-[#003BE2] transition-colors">Cookies Settings</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
     </div>
   );
 }
